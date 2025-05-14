@@ -1,0 +1,57 @@
+.scroll-section {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.card-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: #0c3c6e;
+  color: white;
+  border-radius: 12px;
+  flex: 0 0 auto;
+  width: 250px;
+  padding: 20px;
+  scroll-snap-align: start;
+  background-image: radial-gradient(
+    circle at right,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 100%
+  );
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.know-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.know-more:hover {
+  color: #d1d1d1;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,139 @@
+.subscribe-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 4rem 0;
+  box-sizing: border-box;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.subscribe-left {
+  flex: 1 1 420px;
+  max-width: 600px;
+  padding-left: 6vw;
+}
+
+.subscribe-left h2 {
+  color: #1a365d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-left p {
+  color: #1a365d;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  max-width: 420px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.subscribe-form input[type="email"] {
+  width: 100%;
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: #1a8dbb;
+}
+
+.subscribe-form button {
+  background: #1a365d;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.subscribe-form button:hover {
+  background: #1a8dbb;
+}
+
+.arrow {
+  font-size: 1.1em;
+}
+
+.subscribe-right {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 6vw;
+}
+
+.subscribe-img {
+  width: 330px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .subscribe-left,
+  .subscribe-right {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .subscribe-section {
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2.5rem;
+    align-items: stretch;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .subscribe-left,
+  .subscribe-right {
+    padding: 0 4vw;
+    max-width: 100%;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .subscribe-right {
+    justify-content: center;
+  }
+  .subscribe-img {
+    margin: 0 auto;
+  }
+}

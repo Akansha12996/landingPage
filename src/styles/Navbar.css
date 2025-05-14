@@ -1,0 +1,114 @@
+.navbar {
+  background-color: #0c3c6e;
+  padding: 12px 20px;
+  color: white;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-links .icon {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.enrol-btn {
+  background-color: white;
+  color: #0c3c6e;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enrol-btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #0c3c6e;
+    padding-top: 10px;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .enrol-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
