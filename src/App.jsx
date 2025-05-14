@@ -7,7 +7,7 @@ import FAQSection from "./components/FAQSection";
 import SubscribeSection from "./components/SubscribeSection";
 import Footer from "./components/Footer";
 import "./App.css";
-import StatsSection from "./components/StatsSection";
+import StaticSec from "./components/StaticSec";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <HeroSection />
       <Examinations />
       <CardsSection />
-      <StatsSection />
+      <StaticSec />
       <FAQSection />
       <SubscribeSection />
       <Footer />
