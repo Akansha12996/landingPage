@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/statsSection.css";
+import "../styles/StaticSec.css";
 
 const stats = [
   {
