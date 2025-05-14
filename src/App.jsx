@@ -7,7 +7,7 @@ import FAQSection from "./components/FAQSection";
 import SubscribeSection from "./components/SubscribeSection";
 import Footer from "./components/Footer";
 import "./App.css";
-import StatsSection from "./components/statsSection";
+import StatsSection from "./components/StatsSection";
 
 function App() {
   return (
